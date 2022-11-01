@@ -71,3 +71,7 @@ CREATE TYPE status_type1 AS ENUM('FAULTY', 'NORMAL', 'DELETED');
 drop type if exists status_type1;
 
 ALTER TYPE status_type ADD VALUE 'DELETED' AFTER 'NORMAL';
+
+DELETE FROM Transaction;
+
+DELETE FROM Transaction_entry;
